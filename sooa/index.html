@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>당근마켓</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="status-bar">
+        <div class="time">9:41</div>
+      </div>
+      <!-- 상단 헤더 -->
+      <header class="top-header">
+        <div class="left">
+          <form id="location">
+            <select name="dong" id="dong-select">
+              <option value="서초동">군자동</option>
+              <option value="잠원동">잠원동</option>
+              <option value="반포동">반포동</option>
+              <option value="방배동">방배동</option>
+              <option value="양재동">양재동</option>
+              <option value="내곡동">내곡동</option>
+            </select>
+          </form>
+        </div>
+        <div class="right">
+          <img src="imgs/Search.png" alt="검색" />
+          <img src="imgs/Menu.png" alt="메뉴" />
+          <img src="imgs/Notification.png" alt="알림" />
+        </div>
+      </header>
+      <!-- 메인 콘텐츠 -->
+      <main class="content-area">
+        <article>
+          <ul class="item-list">
+            <li>
+              <img src="imgs/earphoneImg.png" alt="상품1" />
+              <div class="item-info">
+                <p class="title">에어팟 프로</p>
+                <p class="meta">군자동 3일 전</p>
+                <p class="price">220,000원</p>
+              </div>
+            </li>
+            <li>
+              <img src="imgs/earphoneImg.png" alt="상품2" />
+              <div class="item-info">
+                <p class="title">바리레도 블랑쉬 50ml</p>
+                <p class="meta">광진구 구의제3동 · 26초 전</p>
+                <p class="price">350,000원</p>
+              </div>
+            </li>
+            <li>
+              <img src="imgs/earphoneImg.png" alt="상품3" />
+              <div class="item-info">
+                <p class="title">샌드위치</p>
+                <p class="meta">동대문구 휘경동 · 끌올 59초 전</p>
+                <p class="price">1,200,000원</p>
+              </div>
+            </li>
+            <li>
+              <img src="imgs/earphoneImg.png" alt="상품4" />
+              <div class="item-info">
+                <p class="title">아이폰 13프로맥스</p>
+                <p class="meta">군자동 · 1일 전</p>
+                <p class="price">1,000,000원</p>
+              </div>
+            </li>
+            <li>
+              <img src="imgs/earphoneImg.png" alt="상품5" />
+              <div class="item-info">
+                <p class="title">커피머신</p>
+                <p class="meta">구리시 교문1동 · 1초 전</p>
+                <p class="price">100,000원</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </main>
+      <!---플로팅 버튼--->
+      <button class="floating-btn">
+        <img src="imgs/PlusBtn.png" alt="추가" />
+      </button>
+      <!-- 하단 내비게이션 -->
+      <nav class="bottom-nav">
+        <ul class="bottom-nav-list">
+          <!-- <ul> -->
+          <li>
+            <img src="imgs/Home.png" alt="홈" />
+            <a href="" target="_blank"><p>홈</p></a>
+          </li>
+          <li>
+            <img src="imgs/News.png" alt="동네생활" />
+            <a href="" target="_blank"><p>동네생활</p></a>
+          </li>
+          <li>
+            <img src="imgs/Place Marker.png" alt="내 근처" />
+            <a href="" target="_blank"><p>내 근처</p></a>
+          </li>
+          <li>
+            <img src="imgs/Chat.png" alt="채팅" />
+            <a href="" target="_blank"><p>채팅</p></a>
+          </li>
+          <li>
+            <img src="imgs/User.png" alt="나의 당근" />
+            <a href="" target="_blank"><p>나의 당근</p></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

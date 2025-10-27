@@ -2,10 +2,6 @@ body {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
 }
-div{
-  width: 160px;
-  height: 300px;
-}
 
 .header {
   display: flex;
@@ -14,6 +10,8 @@ div{
 }
 
 .header-menu{
+  width: 122px;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -26,14 +24,26 @@ div{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .product {
+  display: flex;
+  align-items: center;
   text-align: left;
+  width: 300px ;
+}
+
+.product-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product img{
-  width: 100%;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
 }
 
 .bottom-nav {

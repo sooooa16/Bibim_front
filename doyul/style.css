@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 3px solid lightgray;
 }
 
 .header-menu{
@@ -34,6 +35,7 @@ body {
   width: 300px ;
 }
 
+
 .product-list{
   display: flex;
   flex-direction: column;
@@ -41,12 +43,14 @@ body {
 }
 
 .product img{
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   margin-right: 10px;
+
 }
 
 .bottom-nav {
+  border-top: 3px solid lightgray;
   position: fixed;
   bottom: 0;
   width: 100%;

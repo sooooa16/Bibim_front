@@ -74,6 +74,8 @@ border-color: brown;
 .nav{
     display: flex;
     justify-content: space-between;
+    border-style: solid;
+    border-color:aqua;
 }
 .navcontent{
     display: flex;

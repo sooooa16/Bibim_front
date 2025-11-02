@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="jjystyle.css" />
+    <script src="jjyjs.js"></script>
     <title>당근마켓</title>
   </head>
-  <body>
+  <body onload="func1()">
+    <div class="clock"></div>
     <!-- 상단 헤더 -->
     <header>
       <button>군자동 <img src="imgs/Expand Arrow.png" /></button>
@@ -60,23 +62,23 @@
       </article>
     </section>
     <!-- 하단 내비게이션 -->
-    <nav>
+    <nav >
       <ul>
-        <li>
+        <li onclick="func2('Home')" class="home">
           <a href="#"><img src="imgs/Home.png" /><span>홈</span></a>
         </li>
-        <li>
+        <li onclick="func2('News')" class="town">
           <a href="#"><img src="imgs/News.png" />동네생활</a>
         </li>
-        <li>
+        <li  class="around">
           <a href="#"
             ><img src="imgs/Place Marker.png" /><span>내 근처</span></a
           >
         </li>
-        <li>
+        <li onclick="func2('Chat')" class="chating">
           <a href="#"><img src="imgs/Chat.png" /><span>채팅</span></a>
         </li>
-        <li>
+        <li  onclick="func2('User')"class="me">
           <a href="#"><img src="imgs/User.png" /><span>나의 당근</span></a>
         </li>
       </ul>

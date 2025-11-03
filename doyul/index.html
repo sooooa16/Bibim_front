@@ -4,10 +4,13 @@
         <meta charset="UTF-8" />
         <title>당근마켓</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="clock.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
     <!-- 상단 헤더 -->
     <header class="header">
+        <div id="clock">Loading...</div>
         <img src="Image/Region.png" class="region"/>
         <ul class="header-menu">
             <li><img src="Image/Search_Icon.png"/></li>
@@ -86,11 +89,21 @@
     <!-- 하단 내비게이션 -->
     <nav class="bottom-nav">
         <ul>
-            <li><img src="Image/Home.png"/><a>홈</a></li>
-            <li><img src="Image/RegionLife.png"/><a>동네생활</a></li>
-            <li><img src="Image/Place Marker.png"/><a>내 근처</a></li>
-            <li><img src="Image/Chat.png"/><a>채팅</a></li>
-            <li><img src="Image/User.png"/><a>나의 당근</a></li>
+            <li onclick="navClick(this)">
+                <img src="Image/Home_active.png" class="nav-icon"/><a>홈</a>
+            </li>
+            <li onclick="navClick(this)">
+                <img src="Image/RegionLife_unactive.png" class="nav-icon"/><a>동네생활</a>
+            </li>
+            <li onclick="navClick(this)">
+                <img src="Image/PlaceMarker_unactiver.png" class="nav-icon"/><a>내 근처</a>
+            </li>
+            <li onclick="navClick(this)">
+                <img src="Image/Chat_unactive.png" class="nav-icon"/><a>채팅</a>
+            </li>
+            <li onclick="navClick(this)">
+                 <img src="Image/User_unactive.png" class="nav-icon"/><a>나의 당근</a>
+            </li>
         </ul>
     </nav>
     </body>

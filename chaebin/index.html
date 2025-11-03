@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <title>당근마켓</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body>
+  <body onload="setClock()">
+    <!-- clock -->
+    <div id="clock"></div>
     <!-- 상단 헤더 -->
     <header>
       <div class="area-wrapper">
@@ -86,23 +89,23 @@
     <nav>
       <ul>
         <li>
-          <img src="images/home.png" alt="" />
+          <img src="images/home_white.png" alt="" id="home" onclick="changeImg('home')"/>
           <a href="#">홈</a>
         </li>
         <li>
-          <img src="images/news.png" alt="" />
+          <img src="images/news_white.png" alt="" id="news" onclick="changeImg('news')"/>
           <a href="#">동네생활</a>
         </li>
         <li>
-          <img src="images/place.png" alt="" />
+          <img src="images/place.png" alt="" id="place"/>
           <a href="#">내 근처</a>
         </li>
         <li>
-          <img src="images/chat.png" alt="" />
+          <img src="images/chat_white.png" alt="" id="chat" onclick="changeImg('chat')"/>
           <a href="#">채팅</a>
         </li>
         <li>
-          <img src="images/user.png" alt="" />
+          <img src="images/user_white.png" alt="" id="user" onclick="changeImg('user')"/>
           <a href="#">나의 당근</a>
         </li>
       </ul>

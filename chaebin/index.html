@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>당근마켓</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body onload="setClock()">
+    <!-- clock -->
+    <div id="clock"></div>
+    <!-- 상단 헤더 -->
+    <header>
+      <div class="area-wrapper">
+        <!-- <label for="area-select"></label> -->
+        <select name="area" id="area-select">
+          <option>군자동</option>
+          <option>구의동</option>
+          <option>광진동</option>
+          <option>중곡동</option>
+          <option>능동</option>
+          <option>자양동</option>
+          <option>화양동</option>
+          <option>광장동</option>
+          <option>세종대</option>
+          <option>어린이대공원</option>
+          <option>건대입구</option>
+          <option>구의역</option>
+          <option>강변역</option>
+        </select>
+        <span class="arrow-icon"><img src="images/expandArrow.png"></span>
+      </div>
+      <div>
+        <ul class="head-icon">
+          <li><img class="head-img" src="images/search.png" alt=""></li>
+          <li><img class="head-img" src="images/menu.png" alt=""></li>
+          <li><img class="head-img" src="images/notification.png" alt=""></li>
+        </ul>
+      </div>
+    </header>
+    <!-- 메인 콘텐츠 -->
+     <section>
+      <article class="product">
+         <img class="preview-img" src="images/airpods.png" alt="" />
+      <div>
+        <div class="product-name">에어팟 프로</div>
+        <div class="product-info">군자동·3일 전</div>
+        <div class="product-price">220,000원</div>
+      </div>
+    </article>
+    <article class="product">
+      <img class="preview-img" src="images/blanche.png" alt="" />
+      <div>
+        <div class="product-name">바이레도 블랑쉬 50ml</div>
+        <div class="product-info">광진구 구의제3동·26초 전</div>
+        <div class="product-price">4,000원</div>
+      </div>
+    </article>
+    <article class="product">
+      <img class="preview-img" src="images/sandwich.png" alt="" />
+      <div>
+        <div class="product-name">샌드위치</div>
+        <div class="product-info">동대문구 휘경동·59초 전</div>
+        <div class="product-price">8,000원</div>
+      </div>
+    </article>
+    <article class="product">
+      <img class="preview-img" src="images/iPhone.png" alt="" />
+      <div>
+        <div class="product-name">아이폰 13프로맥스</div>
+        <div class="product-info">군자동·1일 전</div>
+        <div class="product-price">1,000,000원</div>
+      </div>
+    </article>
+    <article class="product">
+      <img class="preview-img" src="images/airpods.png" alt="" />
+      <div>
+        <div class="product-name">커피머신</div>
+        <div class="product-info">구리시 교문1동·1초 전</div>
+        <div class="product-price">100,000원</div>
+      </div>
+      </article>
+     </section>
+
+     <div class="plus-icon">
+      <img class="plus-img" src="images/plus.png" alt="" />
+     </div>
+    <!-- 하단 내비게이션 -->
+    <nav>
+      <ul>
+        <li>
+          <img src="images/home_white.png" alt="" id="home" onclick="changeImg('home')"/>
+          <a href="#">홈</a>
+        </li>
+        <li>
+          <img src="images/news_white.png" alt="" id="news" onclick="changeImg('news')"/>
+          <a href="#">동네생활</a>
+        </li>
+        <li>
+          <img src="images/place.png" alt="" id="place"/>
+          <a href="#">내 근처</a>
+        </li>
+        <li>
+          <img src="images/chat_white.png" alt="" id="chat" onclick="changeImg('chat')"/>
+          <a href="#">채팅</a>
+        </li>
+        <li>
+          <img src="images/user_white.png" alt="" id="user" onclick="changeImg('user')"/>
+          <a href="#">나의 당근</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
